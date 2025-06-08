@@ -1,3 +1,7 @@
 .pointer > li{
     cursor: pointer;
 }
+
+*{
+    scroll-behavior: smooth;
+}

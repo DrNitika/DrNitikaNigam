@@ -1,21 +1,33 @@
 "use client";
-// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { BackgroundLines } from "@/components/ui/background-lines";
-// import { Button } from "@/components/ui/button";
-// import { TextHoverEffect } from "@/components/ui/text-hover-effect";
-import styled from 'styled-components';
+import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Publications from "./components/Publications";
+import Experience from "./components/Experience";
+import "./components/style.css";
+import { Education } from "./components/Education";
+import Contact from "./components/Contact";
 
 const Page = () => {
   return (
-    <PageComponent className="bg-black relative w-screen h-screen bg-black text-white overflow-hidden">
+    <PageComponent id="home" className="bg-black relative w-screen h-screen bg-black text-white">
       {/* Background Lines */}
-      <BackgroundLines className="bgline bg-black absolute inset-0 z-0 pointer-events-none" />
+      <BackgroundLines className="bgline bg-black absolute inset-0 z-0 pointer-events-none fixed" />
       <Navbar />
       <Hero />
-      <Publications />
+      <div id="pub">
+        <Publications />
+      </div>
+      <div id="exp">
+        <Experience />
+      </div>
+      <div id="edu">
+        <Education />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </PageComponent>
   );
 };
@@ -24,8 +36,9 @@ const PageComponent = styled.div`
   background: black;
   position: absolute;
   z-index: -1000;
+  overflow-x: hidden;
 
-  .bgline{
+  .bgline {
     height: 100vh;
     width: 100%;
     z-index: -999;

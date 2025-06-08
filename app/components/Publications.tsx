@@ -1,24 +1,28 @@
-'use client';
+"use client";
+
+import { LinkPreview } from "@/components/ui/link-preview";
 
 export default function Publications() {
   const papers = [
     {
-      title: 'Efficient Compiler Design Using DFA Minimization',
-      venue: 'IEEE International Conference on Computing, 2024',
-      year: '2024',
-      link: '#', // replace with actual DOI or PDF link
+      title: "Efficient Compiler Design Using DFA Minimization",
+      venue: "IEEE International Conference on Computing, 2024",
+      year: "2024",
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pl-Zm9gAAAAJ&citation_for_view=Pl-Zm9gAAAAJ:qjMakFHDy7sC",
     },
     {
-      title: 'Optimizing Backend Passes in LLVM for AI Workloads',
-      venue: 'ACM Transactions on Architecture and Code Optimization',
-      year: '2023',
-      link: '#',
+      title:
+        "Supervised Attention Network for Arbitrary-Shaped Text Detection in Edge-Fainted Noisy Scene Images",
+      venue: "IEEE Transactions on Computational Social Systems",
+      year: "2021",
+      link: "https://ieeexplore.ieee.org/document/9733381",
     },
     {
-      title: 'Secure Data Flow in IoT Compilers',
-      venue: 'Springer Journal of Embedded Systems, Vol. 15',
-      year: '2022',
-      link: '#',
+      title:
+        "Met-MLTS: Leveraging smartphones for end-to-end spotting of multilingual oriented scene texts and traffic signs in adverse meteorological conditions",
+      venue: "IEEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS",
+      year: "Dec 10, 2021",
+      link: "https://ieeexplore.ieee.org/document/9568769?denied=",
     },
   ];
 
@@ -29,21 +33,26 @@ export default function Publications() {
           📰 Recent Publications
         </h2>
 
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch">
           {papers.map((paper, index) => (
-            <a
+            <LinkPreview
               key={index}
-              href={paper.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-white/5 backdrop-blur-md p-6 rounded-xl shadow hover:shadow-lg hover:scale-[1.01] transition-transform duration-300 border border-white/10"
+              url={paper.link}
+              className="font-bold h-full flex flex-col"
             >
-              <h3 className="text-xl font-semibold text-blue-400 mb-2">
-                {paper.title}
-              </h3>
-              <p className="text-gray-300">{paper.venue}</p>
-              <p className="text-gray-400 mt-1 italic">{paper.year}</p>
-            </a>
+              <a
+                href={paper.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white/5 backdrop-blur-md p-6 rounded-xl shadow hover:shadow-lg hover:scale-[1.01] transition-transform duration-300 border border-white/10 h-full flex flex-col"
+              >
+                <h3 className="text-xl font-semibold text-blue-400 mb-2">
+                  {paper.title}
+                </h3>
+                <p className="text-gray-300 flex-grow">{paper.venue}</p>
+                <p className="text-gray-400 mt-1 italic">{paper.year}</p>
+              </a>
+            </LinkPreview>
           ))}
         </div>
       </div>

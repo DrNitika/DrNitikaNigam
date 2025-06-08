@@ -22,11 +22,11 @@ export default function Navbar() {
         </div>
 
         <ul className="hidden md:flex space-x-6">
-          <li><Link className='cursor-pointer' href="/">Home</Link></li>
-          <li><Link className='cursor-pointer' href="/about">Publications</Link></li>
-          <li><Link className='cursor-pointer' href="/services">Project</Link></li>
-          <li><Link className='cursor-pointer' href="/contact">Contact</Link></li>
-          <li><Link className='cursor-pointer' href="/contact">Experience</Link></li>
+          <li><Link className='cursor-pointer' href="#home">Home</Link></li>
+          <li><Link className='cursor-pointer' href="#pub">Publications</Link></li>
+          <li><Link className='cursor-pointer' href="#exp">Experience</Link></li>
+          <li><Link className='cursor-pointer' href="#edu">Education</Link></li>
+          <li><Link className='cursor-pointer' href="#contact">Contact</Link></li>
         </ul>
       </div>
 
@@ -37,6 +37,8 @@ export default function Navbar() {
             <li><Link className='cursor-pointer' href="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
             <li><Link className='cursor-pointer' href="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
             <li><Link className='cursor-pointer' href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+            <li><Link className='cursor-pointer' href="#exp" onClick={() => setMenuOpen(false)}>Experience</Link></li>
+            <li><Link className='cursor-pointer' href="#edu" onClick={() => setMenuOpen(false)}>Education</Link></li>
           </ul>
         </div>
       )}
