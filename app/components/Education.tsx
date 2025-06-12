@@ -1,6 +1,4 @@
 "use client";
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-import { Timeline } from "@/components/ui/timeline";
 import { TimeLineEducation } from "@/components/ui/timelineEducation";
 import React from "react";
 

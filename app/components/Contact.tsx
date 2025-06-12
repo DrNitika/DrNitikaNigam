@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
     const phoneNumber = "+917651908979";
     const baseUrl = `https://wa.me/${phoneNumber}?text=`;
 
-    let textMessage = `*Name:* ${name}\n*Email:* ${email}\n*Message:* ${message}`;
+    const textMessage = `*Name:* ${name}\n*Email:* ${email}\n*Message:* ${message}`;
 
     const encodedMessage = encodeURIComponent(textMessage);
     window.open(`${baseUrl}${encodedMessage}`, "_blank");
