@@ -38,20 +38,13 @@ export default function Publications() {
             <LinkPreview
               key={index}
               url={paper.link}
-              className="font-bold h-full flex flex-col"
+              className="font-bold h-full flex flex-col bg-white/5 backdrop-blur-md p-6 rounded-xl shadow hover:shadow-lg hover:scale-[1.01] transition-transform duration-300 border border-white/10"
             >
-              <a
-                href={paper.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block bg-white/5 backdrop-blur-md p-6 rounded-xl shadow hover:shadow-lg hover:scale-[1.01] transition-transform duration-300 border border-white/10 h-full flex flex-col"
-              >
-                <h3 className="text-xl font-semibold text-blue-400 mb-2">
-                  {paper.title}
-                </h3>
-                <p className="text-gray-300 flex-grow">{paper.venue}</p>
-                <p className="text-gray-400 mt-1 italic">{paper.year}</p>
-              </a>
+              <h3 className="text-xl font-semibold text-blue-400 mb-2">
+                {paper.title}
+              </h3>
+              <p className="text-gray-300 flex-grow">{paper.venue}</p>
+              <p className="text-gray-400 mt-1 italic">{paper.year}</p>
             </LinkPreview>
           ))}
         </div>
