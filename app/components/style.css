@@ -5,3 +5,7 @@
 *{
     scroll-behavior: smooth;
 }
+
+.navBg{
+    background-color: #48474751;
+}

@@ -9,7 +9,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="text-white p-4 shadow-md fixed top-0 w-full z-50">
+    <nav className="text-white z-[1000] navBg p-4 shadow-md fixed top-0 w-full z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="cursor-pointer text-2xl font-bold">
           Dr. Nitika Nigam
@@ -22,10 +22,12 @@ export default function Navbar() {
         </div>
 
         <ul className="hidden md:flex space-x-6">
-          <li><Link className='cursor-pointer' href="#home">Home</Link></li>
+          <li><Link className='cursor-pointer' href="#">Home</Link></li>
           <li><Link className='cursor-pointer' href="#pub">Publications</Link></li>
           <li><Link className='cursor-pointer' href="#exp">Experience</Link></li>
-          <li><Link className='cursor-pointer' href="#edu">Education</Link></li>
+          <li><Link className='cursor-pointer' href="#pro">Project</Link></li>
+          <li><Link className='cursor-pointer' href="#talks">Talks</Link></li>
+          <li><Link className='cursor-pointer' href="#news">News</Link></li>
           <li><Link className='cursor-pointer' href="#contact">Contact</Link></li>
         </ul>
       </div>

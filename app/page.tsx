@@ -6,8 +6,10 @@ import Hero from "./components/Hero";
 import Publications from "./components/Publications";
 import Experience from "./components/Experience";
 import "./components/style.css";
-import { Education } from "./components/Education";
 import Contact from "./components/Contact";
+import { Project } from "./components/Project";
+import { Talks } from "./components/Talks";
+import { News } from "./components/News";
 
 const Page = () => {
   return (
@@ -22,8 +24,14 @@ const Page = () => {
       <div id="exp">
         <Experience />
       </div>
-      <div id="edu">
-        <Education />
+      <div id="pro">
+        <Project />
+      </div>
+      <div id="talks">
+        <Talks />
+      </div>
+      <div id="news">
+        <News />
       </div>
       <div id="contact">
         <Contact />

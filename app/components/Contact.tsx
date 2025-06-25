@@ -5,15 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, User, MessageSquare } from "lucide-react";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
-import { FloatingDock } from "@/components/ui/floating-dock";
-import {
-  Home,
-  Terminal,
-  Newspaper,
-  RefreshCw,
-  Twitter,
-  Github,
-} from "lucide-react";
 
 const Contact: React.FC = () => {
   const [name, setName] = useState("");
@@ -36,63 +27,6 @@ const Contact: React.FC = () => {
     const encodedMessage = encodeURIComponent(textMessage);
     window.open(`${baseUrl}${encodedMessage}`, "_blank");
   };
-
-  const links = [
-    {
-      title: "Home",
-      icon: (
-        <Home className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Products",
-      icon: (
-        <Terminal className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <Newspaper className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
-      icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
-      ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <RefreshCw className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Twitter",
-      icon: (
-        <Twitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <Github className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-  ];
 
   return (
     <section className="bg-transparent text-white py-20 px-6 md:px-12">
@@ -151,9 +85,6 @@ const Contact: React.FC = () => {
                 Send Message
               </Button>
             </form>
-            <FloatingDock
-              items={links}
-            />
           </CardContent>
         </Card>
       </div>

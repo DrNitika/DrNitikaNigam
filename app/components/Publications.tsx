@@ -5,29 +5,29 @@ import { LinkPreview } from "@/components/ui/link-preview";
 export default function Publications() {
   const papers = [
     {
-      title: "Efficient Compiler Design Using DFA Minimization",
+      title: "Fall-perceived action recognition of persons with neurological disorders using semantic supervision",
       venue: "IEEE International Conference on Computing, 2024",
       year: "2024",
       link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pl-Zm9gAAAAJ&citation_for_view=Pl-Zm9gAAAAJ:qjMakFHDy7sC",
     },
     {
       title:
-        "Supervised Attention Network for Arbitrary-Shaped Text Detection in Edge-Fainted Noisy Scene Images",
+        "Factornet: Holistic actor, object, and scene factorization for action recognition in videos",
       venue: "IEEE Transactions on Computational Social Systems",
       year: "2021",
-      link: "https://ieeexplore.ieee.org/document/9733381",
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pl-Zm9gAAAAJ&citation_for_view=Pl-Zm9gAAAAJ:u-x6o8ySG0sC",
     },
     {
       title:
-        "Met-MLTS: Leveraging smartphones for end-to-end spotting of multilingual oriented scene texts and traffic signs in adverse meteorological conditions",
+        "Emotion and gesture guided action recognition in videos using supervised deep networks",
       venue: "IEEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS",
       year: "Dec 10, 2021",
-      link: "https://ieeexplore.ieee.org/document/9568769?denied=",
+      link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Pl-Zm9gAAAAJ&citation_for_view=Pl-Zm9gAAAAJ:IjCSPb-OGe4C",
     },
   ];
 
   return (
-    <section className="py-16 px-4 md:px-12 bg-transparent text-white">
+    <section className="pb-16 px-4 md:px-12 bg-transparent text-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
           📰 Recent Publications
