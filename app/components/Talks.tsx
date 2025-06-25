@@ -2,7 +2,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export function Talks() {
   return (
-    <div className="w-full bg-transparent dark:bg-neutral-950 font-sans md:px-10">
+    <div className="w-full bg-transparent font-sans md:px-10">
       <h1 className="text-3xl md:text-7xl font-bold md:pl-20 py-10 px-5">
         Recent & Upcoming Talks
       </h1>
